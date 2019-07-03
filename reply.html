@@ -5,7 +5,7 @@
         <!--规定字符编码-->
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <!--设定样式-->
-        <meta name="viewport" content="user-scalable=no">
+        <meta name="viewport" content="user-scalable=yes">
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <link href="css/coin-slider.css" rel="stylesheet" type="text/css"/>
         <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
@@ -38,13 +38,36 @@
             <div class="content_resize">
                 <div class="mainbar">
                     <div class="article">
-                        <h2><span>Swim</span> Teaching Finished!</h2>
+                        <h2><span>Replay</span></h2>
                         <div class="clr"></div>
-                        <p>Posted by <a href="about.html">Zaxii</a>
-                        <p>今天是泳联暑期第一期集训结束的一天。这七天以来，我作为教练，少说也亲自指导了二十位同学，一对一地帮他们发现问题，指出问题，让他们尽力去改正。今天最开心的就是看到大家在测试的时候，非常自然快速的游过50米、100米等等。说明七天以来我们教练团的辛苦真的没有白费。这一期的小遗憾就是没能去教一教自仰蝶的动作，其实还是很想去教除了蛙泳之外的动作的。第二期马上就要来了，希望自己还能保持和第一期一样的状态。Fighting!</p>
-                        <p>Tagged: <a href="#">杂言</a>
-                        <p><a href="reply.html"><strong>Comments (0)</strong></a><span>&nbsp;&bull;&nbsp;</span> July 2, 2019 <span>&nbsp;&bull;&nbsp;</span> <a href="#"><strong>Edit</strong></a></p>
+                        <p id="msg"><script>loadStorage('msg');</script></p>
                     </div>
+                    <div class="article">
+                        <h2><span>Leave a</span> Reply</h2>
+                        <div class="clr"></div>
+                        <form action="#" method="post" id="leavereply">
+                            <ol>
+                                <li>
+                                    <label for="name">Name</label>
+                                    <input id="name" name="name" class="text" />
+                                </li>
+                                <li>
+                                    <label for="email">Email Address</label>
+                                    <input id="email" name="email" class="text" />
+                                </li>
+                                <li>
+                                    <label for="message">Your Message</label>
+                                    <textarea id="message" name="message" rows="8" cols="50"></textarea>
+                                </li>
+                                <li>
+                                    <input type="button" value="留言" onclick="saveStorage('message','name');" />
+                                    <div style="display:inline;text-align:center;"><input type="button" value="清空留言板" onclick="clearStorage('msg');" /></div>
+                                    <input type="button" value="刷新留言板" onclick="loadStorage('msg');" />
+                                    <div class="clr"></div>
+                                </li>
+                            </ol>
+                        </form>
+                    </div> 
                 </div>
                 <div class="sidebar">
                     <div class="gadget">

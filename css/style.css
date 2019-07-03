@@ -4,7 +4,7 @@ body
     margin:0;
     padding:0;
     width:100%;
-    color:#929292;
+    color: #9c9c9c;
     font:normal 15px/1.5em "segoe script", "STXinwei",Tahoma, Sans-Serif;
 }
 html, .main
@@ -200,11 +200,42 @@ h1:hover
     position: relative;
     transform: scale(1.2,1.2);
 }
-.content .mainbar .article .contact img:hover
+.content .mainbar .article .contact img.weibo:hover
 {
     transition:all ease 0.5s;
     position: relative;
     transform: scale(1.2,1.2);
+}
+.content .mainbar .article .contact img.wechat:hover 
+{
+    transition:all ease 0.5s;
+    position: relative;
+    transform: scale(1.2,1.2);
+}
+.contact .wechat img.qrcode
+{
+    position: absolute;
+    z-index:99;
+    left:351px;
+    top:-261px;
+    right:-200px;
+    bottom:200px;
+    width:196px;
+    max-width: none;
+    height:254px;
+    transform: scale(0);
+    transform-origin:left bottom;
+    opacity:0;
+    border:.3125rem solid #c5c5c5;
+    border-radius:.25rem;
+    -webkit-transition:all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.wechat:hover img.qrcode
+{
+    transform: scale(1);
+    opacity: 1;
 }
 .content .sidebar
 {
@@ -303,9 +334,4 @@ ol li .send
     -webkit-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-}
-.contact img.wechat:hover img.qrcode
-{
-    transform: scale(1);
-    opacity: 1;
 }
