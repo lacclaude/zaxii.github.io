@@ -5,13 +5,12 @@
         <!--规定字符编码-->
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <!--设定样式-->
+        <meta name="viewport" content="user-scalable=yes">
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <link href="css/coin-slider.css" rel="stylesheet" type="text/css"/>
-        <script type="text/javascript" src="js/cufon-yui.js"></script>
-    <script type="text/javascript" src="js/cufon-georgia.js"></script>
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/coin-slider.min.js"></script>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/coin-slider.min.js"></script>
     </head>
     <body>
     <div class="main">
@@ -41,7 +40,9 @@
                         <h2><span>Who</span> am I?</h2>
                         <div class="clr"></div>
                         <p>Posted by <a href="#">Zaxii</a>
-                        <div style="margin:0 auto; width:216px; height:216px; border-radius:100%; overflow:hidden;"></divstyle><img src="images/selfie.jpg" width="216" height="216" alt=""/></div>
+                        <div class="selfie">
+                            <img src="images/selfie.jpg" width="216" height="216" alt=""/>
+                        </div>
                         <p style="text-align:center">清华大学软件学院本科在读</p>
                         <p style="text-align:center">漫威忠实粉丝</p>
                         <p style="text-align:center">CSGO重度玩家</p>
@@ -53,9 +54,12 @@
                         <div class="clr"></div>
                         
                         <p>Posted by <a href="#">Zaxii</a></p>
-                        <img src="images/weixin.jpg" width="196" height="255" alt=""/>
-                        <img src="images/weibo.jpg" width="139" height="210" alt=""/>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;微信&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;微博</p>
+                        <div class="contact">
+                            <a href="https://weibo.com/p/1005053215265165"><img src="images/weibo.png" width="40" height="40" alt=""/></a>
+                            <div class="space"></div>
+                            <img class="wechat" src="images/weixin.png" width="40" height="40" alt=""/>
+                            <img class="qrcode" src="images/wechat.jpg" width="392" height="508" alt=""/>
+                        </div>
                         <p>Tagged: <a href="#">杂言</a>
                         <p><a href="#"><strong>Comments (0)</strong></a><span>&nbsp;&bull;&nbsp;</span> July 2, 2019 <span>&nbsp;&bull;&nbsp;</span> <a href="#"><strong>Edit</strong></a></p>
                     </div>
@@ -89,8 +93,7 @@
                         <h2 class="star"><span>Sidebar</span> Menu</h2>
                         <div class="clr"></div>
                         <ul class="sb_menu">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">Me</a></li>
+                            <li><a href="#">Article Tags</a></li>
                         </ul>
                     </div>
                 </div>

@@ -5,7 +5,7 @@ body
     padding:0;
     width:100%;
     color:#929292;
-    font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
+    font:normal 15px/1.5em "segoe script", "STXinwei",Tahoma, Sans-Serif;
 }
 html, .main
 {
@@ -32,6 +32,12 @@ h2
     font-size:25px;
     font-weight:bold;
     color:#353c3e;
+    transition:all ease 0.5s;
+}
+.mainbar h2:hover
+{
+    position: relative;
+    transform: translateX(0.4em);
 }
 p
 {
@@ -66,14 +72,22 @@ h1
     margin:0;
     padding:50px 0 0;
     font-size:48px;
-    font-weight:normal;
+    font-weight:bold;
     line-height:1.2em;
     text-transform:none;
+    transition: all ease 0.5s;
 }
-h1 a, h1 a:hover
+h1 a
 {
     color: #000;
     text-decoration:none;
+}
+h1:hover
+{
+    color: #000;
+    text-decoration:none;
+    position: relative;
+    transform: scale(1.2,1.2);
 }
 .slider
 {
@@ -101,6 +115,7 @@ h1 a, h1 a:hover
     padding:0 20px;
     float:left;
     background:url(../images/menu_split.gif) no-repeat right center;
+    transition:all ease 0.5s;
 }
 .menu_nav ul li a
 {
@@ -113,6 +128,11 @@ h1 a, h1 a:hover
     color:#c4c4c4;
     text-decoration:none;
     text-transform:uppercase;
+}
+.menu_nav ul li:hover
+{
+    position: relative;
+    transform: translateY(-0.4em);
 }
 .menu_nav ul li.active a, .menu_nav ul li a:hover
 {
@@ -149,6 +169,42 @@ h1 a, h1 a:hover
     padding:0 20px 16px;
     border:1px solid #ddd;
     background:#fff url(../images/article_bg.gif) repeat-x left top;
+}
+.space
+{
+    display:inline;
+    padding:0 0 0 10px;
+}
+.content .mainbar .article .selfie, .content .mainbar .article .selfie:hover
+{
+    margin:0 auto; 
+    width:216px; 
+    height:216px; 
+    border-radius:100%; 
+    overflow:hidden;
+    transition:all ease 0.5s;
+}
+.content .mainbar .article .selfie:hover
+{
+    position:relative;
+    transform:rotate(360deg);
+}
+.content .mainbar .article .contact
+{
+    margin:0 auto;
+    text-align:center;
+    transition:all ease 0.5s;
+}
+.content .mainbar .article .contact:hover
+{
+    position: relative;
+    transform: scale(1.2,1.2);
+}
+.content .mainbar .article .contact img:hover
+{
+    transition:all ease 0.5s;
+    position: relative;
+    transform: scale(1.2,1.2);
 }
 .content .sidebar
 {
@@ -230,10 +286,26 @@ ol li .send
 	margin:16px 0 0 0;
 }
 
-.cs-buttons
+.contact img.qrcode
 {
-	margin:8px 0;
-	padding:0;
-	font-size:0;
-	float:left;
+    position: absolute;
+    z-index: 99;
+    top: -200px;
+    right: -40px;
+    width: 7.5rem;
+    max-width: none;
+    height: 7.5rem;
+    transform: scale(0);
+    transform-origin: top right;
+    opacity: 0;
+    border: .3125rem solid #fff;
+    border-radius: .25rem;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.contact img.wechat:hover img.qrcode
+{
+    transform: scale(1);
+    opacity: 1;
 }
