@@ -38,6 +38,26 @@
             <div class="content_resize">
                 <div class="mainbar">
                         <div class="article">
+                                <h2><span>Homework</span> Two</h2>
+                                <div class="clr"></div>
+                                <p>Posted by <a href="about.html">Zaxii</a></p>
+                                <p><strong>第一题：DDL</strong></p>
+                                <p>这道题我是利用了js里的Date类，通过字符串silce的操作提取出来年月日之后计算天数差，再进行细节的调解即可。细节的调解包括比较时间来看是否多超过一天。需要注意字符串转数字*1即可。</p>
+                                <p><strong>第二题：迭代器</strong></p>
+                                <p>这里也主要是学习C++里迭代器的结构和相关的一些判断。由于在CLASS内写，而且我的代码均是写到了ADDCODE里，没有新添加函数，所以我也没弄明白generator该在哪里添加比较好。就没有使用ES6的yield。主要的话是利用类
+                                    中有个栈来存储当前加入栈里的节点。constructor里面直接将根节点加入栈中，hasnext只需要判断是否栈空即可，nextvalue就是将栈里的头元素的val返回，然后将这个元素的所有儿子整体加入栈头即可。
+                                </p>
+                                <p><strong>第三题：fmap</strong></p>
+                                <p>我利用的是递归加类型判断，判断数组当前这个元素是否为数组，如果是数组的话，那么递归进行fmap，如果不是数组的话，而是一个实数或者是空，直接返回function(i)即可。
+                                </p>
+                                <p><strong>第四题：推箱子</strong></p>
+                                <p>这道题是利用的BFS，几个关键点在于什么是一个状态，我考虑的是四维的状态，分别是人的坐标和箱子的坐标，我们只需要BFS走人的坐标即可，判断下一个走到的位置是否是箱子，如果是箱子的话，需要额外判断，判断下一个位置是否是墙。
+                                    直接进行简单的款搜就行。注意一个RE的问题：var arr=[];会RE我也不知道为什么，我认为主要就是因为这么定义的话其实就是没赋值，在代码里加usestrict也不能通过，还是有些问题的。
+                                </p>
+                                <p>Tagged: <a href="#">题解</a></p>
+                                <p><a href="reply.html"><strong>Comments (0)</strong></a><span>&nbsp;&bull;&nbsp;</span> July 2, 2019 <span>&nbsp;&bull;&nbsp;</span> <a href="#"><strong>Edit</strong></a></p>
+                            </div>
+                        <div class="article">
                             <h2><span>Web</span> Learning</h2>
                             <div class="clr"></div>
                             <p>Posted by <a href="about.html">Zaxii</a></p>
