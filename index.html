@@ -37,7 +37,27 @@
         <div class="content">
             <div class="content_resize">
                 <div class="mainbar">
-                        <div class="article">
+                    <div class="article">
+                        <h2><span>Homework</span> Four</h2>
+                        <div class="clr"></div>
+                        <p>Posted by <a href="about.html">Zaxii</a></p>
+                        <p>
+                            这次实验我使用了express框架。实验中有几个遇到的问题：
+                        </p>
+                        <p><strong>问题一：获取POST中req的内容的中间件的选择</strong></p>
+                        <p>最开始在网上百度查到使用body-parser的中间件，但是使用之后自己发现它无法解析'multipart/form-data'类型的请求，会导致测试出现问题。后来经由同学帮助改换成了使用'connect-multiparty'中间件。</p>
+                        <p><strong>问题二：设置静态文件目录</strong></p>
+                        <p>按照教程搭建，其辅助我生成了一个public文件夹，利用app.use(express.static('public'))即可把这内部的文件设置成静态文件目录。</p>
+                        <p><strong>问题三：response返回</strong></p>
+                        <p>我的charset返回好像默认并不是utf-8，不设置会导致挂掉，所以为了保险还是加一句设置res.setHeader('Content-Type','application/json;charset=utf-8')</p>
+                        <p><strong>问题四：compute</strong></p>
+                        <p>加法如果不使用Number(x),Number(y)限定一下的话，返回的值是字符串的连接。</p>
+                        <p><strong>问题五：pair</strong></p>
+                        <p>判断没有利用了typeof(val)是否为undefined来看内存中的内容是否存在。</p>
+                        <p>Tagged: <a href="#">题解</a></p>
+                        <p><a href="reply.html"><strong>Comments (0)</strong></a><span>&nbsp;&bull;&nbsp;</span> July 2, 2019 <span>&nbsp;&bull;&nbsp;</span> <a href="#"><strong>Edit</strong></a></p>
+                    </div>    
+                    <div class="article">
                                 <h2><span>Homework</span> Two</h2>
                                 <div class="clr"></div>
                                 <p>Posted by <a href="about.html">Zaxii</a></p>
@@ -57,6 +77,7 @@
                                 <p>Tagged: <a href="#">题解</a></p>
                                 <p><a href="reply.html"><strong>Comments (0)</strong></a><span>&nbsp;&bull;&nbsp;</span> July 2, 2019 <span>&nbsp;&bull;&nbsp;</span> <a href="#"><strong>Edit</strong></a></p>
                             </div>
+
                         <div class="article">
                             <h2><span>Web</span> Learning</h2>
                             <div class="clr"></div>
